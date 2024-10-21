@@ -1,8 +1,8 @@
 # Kingsley's Portfolio Website
 
-Welcome to my personal portfolio website! This site showcases my skills, projects, and contact information as I pursue opportunities in [ Software Engineering, Data Analysis, Web Development,].
+Welcome to my personal portfolio website! This site showcases my skills, projects, and contact information as I pursue opportunities in **Software Engineering, Data Analysis, and Web Development**.
 
-**Live Demo**: [Your Portfolio Link] (Optional)
+**Live Demo**: 
 
 ---
 
@@ -10,7 +10,7 @@ Welcome to my personal portfolio website! This site showcases my skills, project
 
 - **HTML5**: Structuring the web page and content.
 - **CSS3**: Styling the page with responsive and modern design.
-- **JavaScript (optional)**: Interactive elements and dynamic functionalities (if applicable).
+- **JavaScript**: Interactive elements and dynamic functionalities.
 - **Version Control**: Managed with Git and hosted on GitHub.
 
 ---
@@ -22,11 +22,11 @@ The project follows a simple and organized structure:
 ```plaintext
 portfolio-website/
 │
-├── index.html              # Main HTML file for the portfolio
-├── styles.css              # CSS file for styling the page
-├── README.md               # This documentation file
-├── assets/                 # Images and assets used in the website
-│   ├── profile.jpg         # Profile image used in the About Me section
-│   └── project1.png        # Image for one of the showcased projects
-└── scripts/                # JavaScript files (optional, if any)
-    └── main.js             # Interactive elements or custom scripts
+├── index.html              
+├── styles.css              
+├── README.md              
+├── assets/                
+│   ├── profile.jpg         
+│   └── project1.png       
+└── scripts/                
+    └── main.js             
