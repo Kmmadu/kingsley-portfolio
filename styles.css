@@ -127,69 +127,137 @@ body {
 }
 
 #about ul {
-    list-style-type: disc;
-    padding-left: 20px;
+    list-style-type: none;
+    padding-left: 0;
 }
 
 #about ul li {
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
     font-size: 1.1rem;
 }
 
-/* Projects Section */
-.projects {
-    margin-top: 20px;
+#about ul li img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
 }
 
-.project {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-
-.project h4 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.project p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.project a {
+#about ul li a {
     color: #007BFF;
     text-decoration: none;
-    font-weight: bold;
 }
 
-.project a:hover {
+#about ul li a:hover {
     text-decoration: underline;
 }
 
-/* Responsive Design */
+/* Hire Me (Contact) Section */
+.contact {
+    padding: 50px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.heading span {
+    color: #007BFF;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content {
+    width: 45%;
+}
+
+.content .title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.info h3 i {
+    margin-right: 10px;
+}
+
+.info a {
+    text-decoration: none;
+    color: white;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    background: #444;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.message {
+    height: 150px;
+}
+
+.btn {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btn i {
+    margin-left: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    .main-container {
+    .row {
         flex-direction: column;
+        align-items: center;
     }
 
-    .left-section, .right-section {
+    .content, form {
         width: 100%;
-        height: auto;
-        padding: 20px;
-    }
-
-    .left-footer {
-        position: relative;
-        bottom: auto;
-        left: auto;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    #about {
-        padding: 20px;
+        margin-bottom: 30px;
     }
 }
