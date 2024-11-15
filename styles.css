@@ -7,55 +7,45 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #e0e0e0; /* Light gray background */
 }
 
-/* Header Styles */
+/* Header */
 .header {
-    width: 100%;
-    padding: 1rem 2rem;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    z-index: 1000;
+    background-color: #e0e0e0; /* Dark gray */
+    padding: 15px;
+    text-align: center;
 }
 
-.nav-links {
-    display: flex;
-    list-style-type: none;
-}
-
-.nav-links li {
-    margin: 0 1rem;
-}
-
-.nav-links a {
-    color: #fff;
+.nav a {
+    color: #666;
     text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
+    margin: 0 15px;
+    font-weight: bold;
 }
 
-.nav-links a:hover {
+.nav a:hover {
     color: #007BFF;
 }
 
 /* Main Container */
 .main-container {
     display: flex;
-    width: 100%;
-    height: 100vh;
-    padding-top: 60px; /* Offset for fixed header */
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
 
-/* Left Section Styling */
-.left-section {
-    width: 50%;
+.cell {
     background-color: white;
-    padding: 50px;
+    display: flex;
+    padding: 100px;
+    width: 70%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.left-section {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,23 +60,19 @@ body {
 .name {
     font-size: 3rem;
     font-weight: bold;
-    color: #333;
+    color: #007BFF; /* Electric Blue */
     margin-bottom: 30px;
-}
-
-.buttons {
-    margin-bottom: 60px;
 }
 
 .cta-btn {
     display: inline-block;
     padding: 12px 30px;
-    margin-right: 20px;
     background-color: #007BFF;
     color: #fff;
     text-decoration: none;
     border-radius: 25px;
     font-size: 1.2rem;
+    margin-top: 20px;
     transition: background-color 0.3s ease;
 }
 
@@ -94,34 +80,27 @@ body {
     background-color: #0056b3;
 }
 
-.hire-btn {
-    background-color: #28a745;
-}
-
-.hire-btn:hover {
-    background-color: #218838;
-}
-
-/* Footer */
-.left-footer {
-    position: absolute;
-    bottom: 20px;
-    left: 50px;
-    font-size: 0.9rem;
-    color: #888;
-}
-
-/* Right Section */
 .right-section {
-    width: 50%;
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    padding-left: 20px;
 }
 
 .full-image {
     width: 100%;
     height: 100%;
+    max-width: 400px;
     object-fit: cover;
+    filter: grayscale(100%); /* Black-and-white filter */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #e0e0e0;
+    color: #666;
+    font-size: 0.9rem;
 }
