@@ -10,11 +10,45 @@ body {
     background-color: #f5f5f5;
 }
 
-/* Main Container for Left and Right Sections */
+/* Header Styles */
+.header {
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+/* Main Container */
 .main-container {
     display: flex;
     width: 100%;
     height: 100vh;
+    padding-top: 60px; /* Offset for fixed header */
 }
 
 /* Left Section Styling */
@@ -56,10 +90,6 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.cta-btn span {
-    margin-left: 8px;
-}
-
 .cta-btn:hover {
     background-color: #0056b3;
 }
@@ -72,192 +102,26 @@ body {
     background-color: #218838;
 }
 
-/* Footer in Left Section */
+/* Footer */
 .left-footer {
     position: absolute;
     bottom: 20px;
     left: 50px;
-}
-
-.left-footer p {
     font-size: 0.9rem;
     color: #888;
 }
 
-/* Right Section Styling */
+/* Right Section */
 .right-section {
     width: 50%;
-    background-color: gray;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    position: relative;
 }
 
-/* Full Image Styling */
 .full-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
-}
-
-/* About Me Section Styling */
-#about {
-    padding: 50px;
-    background-color: #fff;
-    text-align: center;
-}
-
-#about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-#about p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-#about h3 {
-    font-size: 2rem;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-#about ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#about ul li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-}
-
-#about ul li img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
-#about ul li a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-#about ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Hire Me (Contact) Section */
-.contact {
-    padding: 50px;
-    background-color: #222;
-    color: white;
-    text-align: center;
-}
-
-.heading {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.heading span {
-    color: #007BFF;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.content {
-    width: 45%;
-}
-
-.content .title {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.info h3 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-.info h3 i {
-    margin-right: 10px;
-}
-
-.info a {
-    text-decoration: none;
-    color: white;
-}
-
-.info a:hover {
-    text-decoration: underline;
-}
-
-/* Form Styles */
-form {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-}
-
-.box {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: none;
-    background: #444;
-    color: white;
-    font-size: 1.1rem;
-    border-radius: 5px;
-}
-
-.message {
-    height: 150px;
-}
-
-.btn {
-    padding: 12px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-
-.btn i {
-    margin-left: 5px;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .content, form {
-        width: 100%;
-        margin-bottom: 30px;
-    }
 }
