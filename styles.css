@@ -37,7 +37,8 @@ button:hover {
 /* Profile Section */
 .profile {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Default column layout */
+    align-items: center;
     padding: 20px;
     margin: 20px;
     background-color: #fff;
@@ -46,25 +47,78 @@ button:hover {
 }
 
 .profile-left {
-    flex: 1;
     display: flex;
+    flex-direction: column; /* Align image and text in a column */
     align-items: center;
+    text-align: center;
 }
 
 .profile-photo {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
-.profile-right {
-    flex: 2;
-    padding-left: 20px;
+.profile-details h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.profile-details p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.social-links {
+    margin-top: 10px;
 }
 
 .social-links a {
     margin-right: 10px;
+    text-decoration: none;
+    color: #0073b1;
+}
+
+.profile-header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-header h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Desktop View */
+@media screen and (min-width: 768px) {
+    .profile {
+        flex-direction: row; /* Switch to row layout on desktop */
+        justify-content: space-between;
+    }
+
+    .profile-left {
+        flex-direction: row; /* Align image and name in a row */
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+    }
+
+    .profile-details {
+        margin-left: 20px;
+    }
+
+    .profile-header {
+        align-self: flex-start;
+        margin-left: 20px;
+    }
 }
 
 /* Tools Icons */
@@ -74,14 +128,16 @@ button:hover {
     margin: 10px;
 }
 
-/* Responsive Design */
+/* Mobile View Adjustments */
 @media screen and (max-width: 768px) {
     .profile {
         flex-direction: column;
         align-items: center;
     }
 
-    .profile-left, .profile-right {
+    .profile-left {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
         margin-bottom: 20px;
     }
@@ -89,12 +145,22 @@ button:hover {
     .profile-photo {
         width: 120px;
         height: 120px;
+        margin-bottom: 10px;
+    }
+
+    .profile-details h1 {
+        font-size: 1.4em;
     }
 }
 
+/* Extra Small Screens */
 @media screen and (max-width: 480px) {
     .profile-photo {
         width: 100px;
         height: 100px;
+    }
+
+    .profile-details h1 {
+        font-size: 1.2em;
     }
 }
